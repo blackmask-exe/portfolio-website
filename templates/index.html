@@ -29,6 +29,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="../static/css/style.css" rel="stylesheet" />
     <script src="../static/js/script.js"></script>
     <title>Gigachad George</title>
   </head>
@@ -153,7 +154,7 @@
         <h2 class="pb-2 border-bottom mt-5">Projects</h2>
 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
+          <a class="col project-card" href="" style="text-decoration: none">
             <div
               class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
               style="background-image: url('unsplash-photo-1.jpg')"
@@ -189,18 +190,28 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="col">
+          <a
+            class="col project-card"
+            href="https://prathamsnn.netlify.app"
+            style="text-decoration: none"
+          >
             <div
               class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-2.jpg')"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('../static/images/tindog.webp');
+              "
             >
               <div
                 class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
               >
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Much longer title that wraps to multiple lines
+                  TinDog Website
                 </h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
@@ -227,9 +238,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="col">
+          <a class="col project-card" href="" style="text-decoration: none">
             <div
               class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
               style="background-image: url('unsplash-photo-3.jpg')"
@@ -263,7 +274,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -481,6 +492,7 @@
         </footer>
       </div>
     </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
